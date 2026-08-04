@@ -1,0 +1,194 @@
+material:
+  common_name: Aluminium 6061-T6
+  standard: AL 6061-T6 / ASTM B209
+  density:
+    value: 2700.0
+    unit: kg/m^3
+  thermal_conductivity:
+    value: 167.0
+    unit: W/(m*K)
+  specific_heat:
+    value: 896.0
+    unit: J/(kg*K)
+  melting_point:
+    value: 652.0
+    unit: degC
+  solidus_temperature:
+    value: 582.0
+    unit: degC
+  ambient_temperature:
+    value: 293.15
+    unit: K
+  data_source: Representative room-temperature thermophysical properties for wrought
+    Aluminium 6061-T6.
+gmaw_process:
+  base_process: spray
+  manufacturer: Generic GMAW System
+  power_source: Constant Voltage Power Source
+  voltage:
+    value: 22.0
+    unit: V
+  current:
+    value: 180.0
+    unit: A
+  travel_speed:
+    value: 8.0
+    unit: mm/s
+  efficiency: 0.8
+  wire_feedrate:
+    value: 7.0
+    unit: m/min
+  shielding_gas: 98% Ar / 2% CO2
+  data_source: Existing nominal GMAW settings retained from the original notebook
+    workflow.
+geometry:
+  joint_type: Lap joint
+  joint_configuration: Double fillet weld on both longitudinal edges of the overlap
+  data_source: User-specified corrected lap-joint geometry
+  coordinate_system:
+    x: plate-length and weld-travel direction
+    y: plate-width and overlap-normal direction
+    z: plate-thickness direction
+  plate_length:
+    value: 200.0
+    unit: mm
+  plate_width:
+    value: 80.0
+    unit: mm
+  plate_thickness:
+    value: 4.0
+    unit: mm
+  assembly_length:
+    value: 200.0
+    unit: mm
+  assembly_width:
+    value: 135.0
+    unit: mm
+  lower_plate:
+    length:
+      value: 200.0
+      unit: mm
+    width:
+      value: 80.0
+      unit: mm
+    thickness:
+      value: 4.0
+      unit: mm
+    x_range:
+      values:
+      - 0.0
+      - 200.0
+      unit: mm
+    y_range:
+      values:
+      - 0.0
+      - 80.0
+      unit: mm
+    z_range:
+      values:
+      - 0.0
+      - 4.0
+      unit: mm
+  upper_plate:
+    length:
+      value: 200.0
+      unit: mm
+    width:
+      value: 80.0
+      unit: mm
+    thickness:
+      value: 4.0
+      unit: mm
+    x_range:
+      values:
+      - 0.0
+      - 200.0
+      unit: mm
+    y_range:
+      values:
+      - 55.0
+      - 135.0
+      unit: mm
+    z_range:
+      values:
+      - 4.0
+      - 8.0
+      unit: mm
+  overlap:
+    value: 25.0
+    unit: mm
+  overlap_y_range:
+    values:
+    - 55.0
+    - 80.0
+    unit: mm
+  fillet_leg:
+    value: 4.0
+    unit: mm
+  weld_count: 2
+  weld_sides:
+  - first longitudinal edge of overlap
+  - second longitudinal edge of overlap
+  weld_length:
+    value: 200.0
+    unit: mm
+  weld_line_y_positions:
+    values:
+    - 55.0
+    - 80.0
+    unit: mm
+  weld_travel_direction: +x
+  weld_path_1_start:
+    values:
+    - 0.0
+    - 55.0
+    - 4.0
+    unit: mm
+  weld_path_1_end:
+    values:
+    - 200.0
+    - 55.0
+    - 4.0
+    unit: mm
+  weld_path_2_start:
+    values:
+    - 0.0
+    - 80.0
+    - 4.0
+    unit: mm
+  weld_path_2_end:
+    values:
+    - 200.0
+    - 80.0
+    - 4.0
+    unit: mm
+  sensor_distances:
+    values:
+    - 2.0
+    - 5.0
+    - 10.0
+    unit: mm
+    reference: normal distance from Weld 1 centreline
+  sensor_labels:
+  - TC1
+  - TC2
+  - TC3
+  thermocouple_reference_weld: Weld 1 at y = 55 mm
+  thermocouple_x_positions:
+    values:
+    - 100.0
+    - 100.0
+    - 100.0
+    unit: mm
+  thermocouple_y_positions:
+    values:
+    - 53.0
+    - 50.0
+    - 45.0
+    unit: mm
+  thermocouple_z_positions:
+    values:
+    - 4.0
+    - 4.0
+    - 4.0
+    unit: mm
